@@ -63,11 +63,11 @@ background-color: @darkgrey;
 #custom-power,
 #custom-weather,
 #custom-pacman,
-#battery,
 #backlight,
 #pulseaudio,
 #network,
 #battery,
+#backlight,
 #bluetooth,
 #clock,
 #tray {
@@ -85,6 +85,7 @@ background-color: @darkgrey;
 #pulseaudio,
 #network,
 #battery,
+#backlight
 #bluetooth{
   color: @lightyellow;
   background-color: @bg;
@@ -97,6 +98,7 @@ background-color: @darkgrey;
 
 #network,
 #battery,
+#backlight,
 #bluetooth{
   padding-right: 17px;
 }
