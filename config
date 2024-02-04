@@ -20,9 +20,9 @@
     "modules-right": [
         "tray",
         "temperature",
-        "pulseaudio",
         "network",
         "bluetooth",
+        "pulseaudio",
         "backlight",
         "battery",
         "custom/power"
@@ -95,7 +95,7 @@
               "tooltip-format-ethernet": "󰈀  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "tooltip-format-disconnected": "Disconnected",
         "on-click": "~/.config/rofi/wifi/wifi.sh &",
-              "on-click-right": "~/.config/rofi/wifi/wifinew.sh &",
+        "on-click-right": "~/.config/rofi/wifi/wifinew.sh &",
         "interval": 5,
         "nospacing": 1,
     },
@@ -106,7 +106,7 @@
     },
     "bluetooth": {
         "interval": 30,
-        "format": "<span color='#4174d9'>{icon}</span>",
+        "format": "{icon}",
         "format-icons": {
             "enabled": "",
             "disabled": "󰂲"
@@ -114,7 +114,7 @@
         "on-click": "blueberry"
     },   
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "<span color='#b4befe'>{icon}</span> {volume}%",
         "format-bluetooth": "󰂰",
         "nospacing": 1,
         "tooltip-format": "Volume : {volume}%",
@@ -123,7 +123,7 @@
             "headphone": "",
             "default": ["󰖀","󰕾",""]
         },
-        "on-click": "pamixer -t",
+        "on-click": "pavucontrol",
         "scroll-step": 1
     },
     "battery": {
