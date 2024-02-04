@@ -123,7 +123,7 @@
         "scroll-step": 1
     },
     "battery": {
-      "format": "<span color='#c1d98f'>{icon}</span> {capacity}%",
+      "format": "<span color='#737373'>{icon}</span> {capacity}%",
       "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
       "format-charging": "<span color='#b2f252'>󰂄</span> {capacity}%",
       "tooltip": false,
