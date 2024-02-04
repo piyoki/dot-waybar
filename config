@@ -24,6 +24,7 @@
         "pulseaudio",
         "network",
         "bluetooth",
+        "battery",
         "custom/power"
     ],
     "wlr/taskbar": {
@@ -119,6 +120,12 @@
         },
         "on-click": "pamixer -t",
         "scroll-step": 1
+    },
+    "battery": {
+      "format": "{icon} {capacity}%",
+      "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "format-charging": "󰂄 {capacity}%",
+      "tooltip": false,
     },
     "custom/power": {
         "format": "󰤆",

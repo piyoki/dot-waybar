@@ -67,6 +67,7 @@ background-color: @darkgrey;
 #backlight,
 #pulseaudio,
 #network,
+#battery,
 #bluetooth,
 #clock,
 #tray {
@@ -83,6 +84,7 @@ background-color: @darkgrey;
 #backlight,
 #pulseaudio,
 #network,
+#battery,
 #bluetooth{
   color: @lightyellow;
   background-color: @bg;
@@ -94,6 +96,7 @@ background-color: @darkgrey;
 }
 
 #network,
+#battery,
 #bluetooth{
   padding-right: 17px;
 }
