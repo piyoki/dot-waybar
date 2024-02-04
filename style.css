@@ -3,7 +3,8 @@
 @define-color lightgrey #343a40;
 @define-color red #e30b44;
 @define-color white #f2efeb;
-@define-color green #85ff99;
+@define-color skyblue #83c6e0;
+@define-color avocado #c1d98f;
 @define-color lightyellow #f6eac4;
 @define-color tray #181825;
 
@@ -63,10 +64,11 @@ background-color: @darkgrey;
 #custom-power,
 #custom-weather,
 #custom-pacman,
-#battery,
 #backlight,
 #pulseaudio,
 #network,
+#battery,
+#backlight,
 #bluetooth,
 #clock,
 #tray {
@@ -83,6 +85,8 @@ background-color: @darkgrey;
 #backlight,
 #pulseaudio,
 #network,
+#power,
+#battery,
 #bluetooth{
   color: @lightyellow;
   background-color: @bg;
@@ -90,12 +94,7 @@ background-color: @darkgrey;
 
 #clock{
   font-family: JetBrainsMono Nerd Font;
-  background-color: @green;
-}
-
-#network,
-#bluetooth{
-  padding-right: 17px;
+  background-color: @skyblue;
 }
 
 #custom-weather,
@@ -108,3 +107,4 @@ background-color: @darkgrey;
 #custom-pacman {
   color: @red;
 }
+

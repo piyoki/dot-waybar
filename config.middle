@@ -21,9 +21,10 @@
         "temperature",
         "cpu",
         "memory",
-        "pulseaudio",
         "network",
         "bluetooth",
+        "backlight",
+        "pulseaudio",
         "custom/power"
     ],
     "wlr/taskbar": {
@@ -65,12 +66,12 @@
     },
     "cpu": {
         "interval": 2,
-        "format": " {}%",
+        "format": "  {}%",
         "max-length": 10
     },
     "memory": {
         "interval": 2,
-        "format": "󰍛 {}%",
+        "format": "󰍛  {}%",
         "exec": "free -h | awk '/Mem:/{printf $3}'",
         "max-length": 10
     },
@@ -105,8 +106,13 @@
         },
         "on-click": "blueberry"
     },   
+    "backlight": {
+      "device": "intel_backlight",
+      "format": "<span color='#b4befe'>{icon}</span> {percent}%",
+      "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "<span color='#b4befe'>{icon}</span>  {volume}%",
         "format-bluetooth": "󰂰",
         "nospacing": 1,
         "tooltip-format": "Volume : {volume}%",
@@ -115,7 +121,7 @@
             "headphone": "",
             "default": ["󰖀","󰕾",""]
         },
-        "on-click": "pamixer -t",
+        "on-click": "pavucontrol",
         "scroll-step": 1
     },
     "custom/power": {
