@@ -86,7 +86,7 @@ background-color: @darkgrey;
 #pulseaudio,
 #network,
 #battery,
-#backlight
+#backlight,
 #bluetooth{
   color: @lightyellow;
   background-color: @bg;
@@ -95,13 +95,6 @@ background-color: @darkgrey;
 #clock{
   font-family: JetBrainsMono Nerd Font;
   background-color: @skyblue;
-}
-
-#network,
-#battery,
-#backlight,
-#bluetooth{
-  padding-right: 17px;
 }
 
 #custom-weather,
