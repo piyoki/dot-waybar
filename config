@@ -106,7 +106,7 @@
     },
     "bluetooth": {
         "interval": 30,
-        "format": "{icon}",
+        "format": "<span color='#4174d9'>{icon}</span>",
         "format-icons": {
             "enabled": "",
             "disabled": "󰂲"
