@@ -25,6 +25,7 @@
         "pulseaudio",
         "backlight",
         "battery",
+        "custom/nixlogo",
         "custom/power"
     ],
     "wlr/taskbar": {
@@ -136,5 +137,9 @@
     "custom/weather": {
         "exec": "curl 'https://wttr.in/HongKong?format=1'",
         "interval": 3600
-    }
+    },
+    "custom/nixlogo": {
+        "format": "",
+        "tooltip": false,
+    },
 }

@@ -4,6 +4,7 @@
 @define-color red #e30b44;
 @define-color white #f2efeb;
 @define-color skyblue #83c6e0;
+@define-color icyblue #aad1ee;
 @define-color avocado #c1d98f;
 @define-color lightyellow #f6eac4;
 @define-color tray #181825;
@@ -40,7 +41,7 @@ background-color: @darkgrey;
   all: initial; /* Remove GTK theme values (waybar #1351) */
   min-width: 0; /* Fix weird spacing in materia (waybar #450) */
   box-shadow: inset 0 -3px transparent; /* Use box-shadow instead of border so the text isn't offset */
-  padding: 6px 18px;
+  padding: 6px 10px;
   border-radius: 4px;
   background-color: @bg;
   color: @lightgrey;
@@ -62,6 +63,7 @@ background-color: @darkgrey;
 #cpu,
 #memory,
 #custom-power,
+#custom-nixlogo,
 #custom-weather,
 #custom-pacman,
 #backlight,
@@ -94,16 +96,17 @@ background-color: @darkgrey;
 
 #clock{
   font-family: JetBrainsMono Nerd Font;
-  background-color: @skyblue;
+  background-color: @icyblue;
 }
 
 #custom-weather,
 #custom-power {
-  margin-right: 6px;
   background-color: @bg;
   color: @white;
 }
 
-#custom-pacman {
-  color: @red;
+#custom-nixlogo {
+  font-size: 14px;
+  margin-right: 6px;
+  color: @skyblue;
 }
