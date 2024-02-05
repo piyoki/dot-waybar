@@ -3,8 +3,7 @@
 @define-color lightgrey #343a40;
 @define-color red #e30b44;
 @define-color white #f2efeb;
-@define-color skyblue #83c6e0;
-@define-color avocado #c1d98f;
+@define-color avocado #aee48c;
 @define-color lightyellow #f6eac4;
 @define-color tray #181825;
 
@@ -94,7 +93,7 @@ background-color: @darkgrey;
 
 #clock{
   font-family: JetBrainsMono Nerd Font;
-  background-color: @skyblue;
+  background-color: @avocado;
 }
 
 #custom-weather,
