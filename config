@@ -19,7 +19,6 @@
     ],
     "modules-right": [
         "tray",
-        "temperature",
         "network",
         "bluetooth",
         "pulseaudio",
