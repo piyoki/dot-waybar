@@ -76,7 +76,7 @@ background-color: @darkgrey;
 #clock,
 #tray {
   border-radius: 8px;
-  margin: 6px 3px;
+  margin: 6px 2px;
   padding: 6px 12px;
   background-color: @bg;
   color: @tray;
