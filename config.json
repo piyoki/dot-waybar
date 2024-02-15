@@ -119,6 +119,7 @@
     "format": "<span color='#737373'>{icon}</span> {capacity}%",
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "format-charging": "<span color='#b2f252'>󰂄</span> {capacity}%",
+    "format-plugged": "<span color='#b2f252'>󰚥</span> MAX",
     "tooltip": false
   },
   "custom/power": {
