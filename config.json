@@ -91,7 +91,8 @@
   "backlight": {
     "device": "intel_backlight",
     "format": "<span color='#b4befe'>{icon}</span> {percent}%",
-    "format-icons": ["", "", "", "", "", "", "", "", ""]
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "tooltip-format": "Brigtness: {percent}%"
   },
   "bluetooth": {
     "interval": 30,
@@ -116,14 +117,12 @@
     "scroll-step": 1
   },
   "battery": {
-    "interval": 10,
+    "interval": 30,
     "format": "<span color='#737373'>{icon}</span> {capacity}%",
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "format-charging": "<span color='#b2f252'>󰂄</span> {capacity}%",
     "format-plugged": "<span color='#b2f252'>󰚥</span> MAX",
-    "tooltip-format": "Profile: {}",
-    "exec": "cat /sys/firmware/acpi/platform_profile",
-    "on-click": "$HOME/.config/rofi/bin/profile-switch"
+    "tooltip-format": "{}"
   },
   "custom/power": {
     "format": "󰤆",
@@ -135,6 +134,9 @@
     "interval": 3600
   },
   "custom/nixlogo": {
-    "format": ""
+    "format": "",
+    "exec": "cat /sys/firmware/acpi/platform_profile",
+    "on-click": "$HOME/.config/rofi/bin/profile-switch",
+    "tooltip-format": "Profile: {}"
   }
 }
