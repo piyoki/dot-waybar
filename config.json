@@ -135,7 +135,6 @@
   "custom/nixlogo": {
     "format": "",
     "exec": "cat /sys/firmware/acpi/platform_profile",
-    "on-click": "$HOME/.config/rofi/bin/profile-switch",
     "tooltip-format": "Profile: {}"
   }
 }
