@@ -65,7 +65,6 @@ background-color: @darkgrey;
 #cpu,
 #memory,
 #custom-power,
-#custom-notification,
 #custom-nixlogo,
 #custom-weather,
 #custom-pacman,
@@ -84,7 +83,6 @@ background-color: @darkgrey;
   color: @tray;
 }
 
-#custom-notification,
 #temperature,
 #cpu,
 #memory,

@@ -17,7 +17,6 @@
     "pulseaudio",
     "backlight",
     "battery",
-    "custom/notification",
     "custom/power"
   ],
   "wlr/taskbar": {
@@ -60,12 +59,12 @@
     "min-length": 7
   },
   "cpu": {
-    "interval": 1,
+    "interval": 5,
     "format": " {}%",
     "max-length": 10
   },
   "memory": {
-    "interval": 1,
+    "interval": 5,
     "format": "󰍛 {}%",
     "exec": "free -h | awk '/Mem:/{printf $3}'",
     "max-length": 10
@@ -85,7 +84,7 @@
     "tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "󰈀  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "on-click": "nm-connection-editor",
-    "interval": 5,
+    "interval": 30,
     "nospacing": 1
   },
   "backlight": {
@@ -128,21 +127,6 @@
     "format": "",
     "tooltip": false,
     "on-click": "$HOME/.config/rofi/bin/powermenu"
-  },
-  "custom/notification": {
-    "tooltip": false,
-    "format": "{icon}",
-    "format-icons": {
-      "notification": "󰂚<span foreground='red'><sup></sup></span>",
-      "none": "󰂚",
-      "dnd-notification": "󰂛<span foreground='red'><sup></sup></span>",
-      "dnd-none": "󰂛",
-      "inhibited-notification": "󰂚<span foreground='red'><sup></sup></span>",
-      "inhibited-none": "󰂚",
-      "dnd-inhibited-notification": "󰂛<span foreground='red'><sup></sup></span>",
-      "dnd-inhibited-none": "󰂛"
-    },
-    "escape": true
   },
   "custom/weather": {
     "exec": "curl 'https://wttr.in/HongKong?format=1'",
