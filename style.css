@@ -5,6 +5,7 @@
 @define-color white #f2efeb;
 @define-color skyblue #83c6e0;
 @define-color icyblue #aad1ee;
+@define-color flakeicy #e5f0fa;
 @define-color avocado #c1d98f;
 @define-color lightyellow #f6eac4;
 @define-color tray #181825;
@@ -64,6 +65,7 @@ background-color: @darkgrey;
 #cpu,
 #memory,
 #custom-power,
+#custom-notification,
 #custom-nixlogo,
 #custom-weather,
 #custom-pacman,
@@ -82,6 +84,7 @@ background-color: @darkgrey;
   color: @tray;
 }
 
+#custom-notification,
 #temperature,
 #cpu,
 #memory,
@@ -103,7 +106,7 @@ background-color: @darkgrey;
 #custom-weather,
 #custom-power {
   background-color: @bg;
-  color: @white;
+  color: @flakeicy;
 }
 
 #custom-nixlogo {
