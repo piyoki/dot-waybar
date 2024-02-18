@@ -51,13 +51,13 @@ background-color: @darkgrey;
 }
 
 #workspaces button.active {
-  color: @white;
+  color: @flakeicy;
 }
 
 #workspaces button:hover {
  box-shadow: inherit;
  text-shadow: inherit;
- color: @white;
+ color: @flakeicy;
  background-color: @lightgrey;
 }
 
