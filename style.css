@@ -3,7 +3,7 @@
 @define-color lightgrey #343a40;
 @define-color red #e30b44;
 @define-color white #f2efeb;
-@define-color skyblue #83c6e0;
+@define-color flake #d2fff3;
 @define-color icyblue #aad1ee;
 @define-color flakeicy #e5f0fa;
 @define-color avocado #c1d98f;
@@ -51,13 +51,13 @@ background-color: @darkgrey;
 }
 
 #workspaces button.active {
-  color: @flakeicy;
+  color: @lightyellow;
 }
 
 #workspaces button:hover {
  box-shadow: inherit;
  text-shadow: inherit;
- color: @flakeicy;
+ color: @lightyellow;
  background-color: @lightgrey;
 }
 
@@ -98,16 +98,16 @@ background-color: @darkgrey;
 
 #clock{
   font-family: JetBrainsMono Nerd Font;
-  background-color: @white;
+  background-color: @flake;
 }
 
 #custom-weather,
 #custom-power {
   background-color: @bg;
-  color: @flakeicy;
+  color: @lightyellow;
 }
 
 #custom-nixlogo {
   font-size: 14px;
-  color: @skyblue;
+  color: @icyblue;
 }
