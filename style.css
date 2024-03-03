@@ -3,7 +3,10 @@
 @define-color lightgrey #343a40;
 @define-color red #e30b44;
 @define-color white #f2efeb;
-@define-color avocado #aee48c;
+@define-color flake #d2fff3;
+@define-color icyblue #aad1ee;
+@define-color flakeicy #e5f0fa;
+@define-color avocado #c1d98f;
 @define-color lightyellow #f6eac4;
 @define-color tray #181825;
 
@@ -11,8 +14,9 @@
   border: none;
   border-radius: 10px;
   min-height: 0;
-  font-family: 'Fira Code', 'Symbols Nerd Font Mono';
-  font-size: 14px;
+  font-family: "Fira Code", "Symbols Nerd Font Mono";
+  font-size: 12px;
+  background: none;
 }
 
 window#waybar {
@@ -39,21 +43,21 @@ background-color: @darkgrey;
   all: initial; /* Remove GTK theme values (waybar #1351) */
   min-width: 0; /* Fix weird spacing in materia (waybar #450) */
   box-shadow: inset 0 -3px transparent; /* Use box-shadow instead of border so the text isn't offset */
-  padding: 6px 18px;
-  border-radius: 4px;
+  padding: 6px 10px;
+  border-radius: 6px;
   background-color: @bg;
   color: @lightgrey;
   font-size: 10px;
 }
 
 #workspaces button.active {
-  color: @white;
+  color: @lightyellow;
 }
 
 #workspaces button:hover {
  box-shadow: inherit;
  text-shadow: inherit;
- color: @white;
+ color: @lightyellow;
  background-color: @lightgrey;
 }
 
@@ -61,6 +65,7 @@ background-color: @darkgrey;
 #cpu,
 #memory,
 #custom-power,
+#custom-nixlogo,
 #custom-weather,
 #custom-pacman,
 #backlight,
@@ -71,8 +76,8 @@ background-color: @darkgrey;
 #bluetooth,
 #clock,
 #tray {
-  border-radius: 4px;
-  margin: 6px 3px;
+  border-radius: 8px;
+  margin: 6px 2px;
   padding: 6px 12px;
   background-color: @bg;
   color: @tray;
@@ -84,8 +89,8 @@ background-color: @darkgrey;
 #backlight,
 #pulseaudio,
 #network,
-#power,
 #battery,
+#backlight,
 #bluetooth{
   color: @lightyellow;
   background-color: @bg;
@@ -93,17 +98,17 @@ background-color: @darkgrey;
 
 #clock{
   font-family: JetBrainsMono Nerd Font;
-  background-color: @avocado;
+  background-color: @flake;
 }
 
 #custom-weather,
 #custom-power {
-  margin-right: 6px;
   background-color: @bg;
-  color: @white;
+  color: @lightyellow;
 }
 
-#custom-pacman {
-  color: @red;
+#custom-nixlogo {
+  font-size: 14px;
+  color: @icyblue;
 }
 
