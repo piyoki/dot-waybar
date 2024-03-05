@@ -134,7 +134,6 @@
   },
   "custom/nixlogo": {
     "format": "",
-    "exec": "cat /sys/firmware/acpi/platform_profile",
     "tooltip-format": "Profile: {}"
   }
 }
