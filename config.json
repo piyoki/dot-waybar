@@ -121,6 +121,11 @@
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "format-charging": "<span color='#b2f252'>󰂄</span> {capacity}%",
     "format-plugged": "<span color='#b2f252'>󰚥</span> MAX",
+    "format-full": "<span color='#b2f252'>󰚥</span> MAX",
+    "states": {
+      "warning": 20,
+      "critical": 10
+    },
     "tooltip-format": "{}"
   },
   "custom/power": {
