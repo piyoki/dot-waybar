@@ -60,7 +60,7 @@
   },
   "cpu": {
     "interval": 5,
-    "format": " {}%",
+    "format": "󰘚 {}%",
     "max-length": 10
   },
   "memory": {
@@ -139,7 +139,6 @@
   },
   "custom/nixlogo": {
     "format": "",
-    "exec": "cat /sys/firmware/acpi/platform_profile",
-    "tooltip-format": "Profile: {}"
+    "tooltip": false
   }
 }
