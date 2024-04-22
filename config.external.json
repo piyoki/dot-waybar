@@ -8,7 +8,25 @@
   "margin-bottom": 0,
   "margin-left": 20,
   "margin-right": 20,
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["custom/nixlogo", "hyprland/workspaces", "cpu", "memory"],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "tray",
+    "network",
+    "bluetooth",
+    "pulseaudio",
+    "backlight",
+    "battery",
+    "custom/power"
+  ],
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "on-click-right": "fullscreen",
+    "icon-theme": "WhiteSur",
+    "icon-size": 25,
+    "tooltip-format": "{title}"
+  },
   "hyprland/workspaces": {
     "disable-scroll": true,
     "on-click": "activate",
@@ -18,6 +36,7 @@
       "7": "",
       "8": "",
       "9": "",
+      "0": "",
       "default": "",
       "active": ""
     },
@@ -25,7 +44,101 @@
       "6": [],
       "7": [],
       "8": [],
-      "9": []
+      "9": [],
+      "0": []
     }
+  },
+  "temperature": {
+    "interval": "1",
+    "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+    "critical-threshold": 74,
+    "format-critical": "  {temperatureC}°C",
+    "format": "{icon}  {temperatureC}°C",
+    "format-icons": ["", "", ""],
+    "max-length": 7,
+    "min-length": 7
+  },
+  "cpu": {
+    "interval": 5,
+    "format": "󰘚 {}%",
+    "max-length": 10
+  },
+  "memory": {
+    "interval": 5,
+    "format": "󰍛 {}%",
+    "exec": "free -h | awk '/Mem:/{printf $3}'",
+    "max-length": 10
+  },
+  "tray": {
+    "spacing": 15
+  },
+  "clock": {
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "format-alt": "  {:%a, %d %b %Y}",
+    "format": "  {:%m/%d %I:%M %p}"
+  },
+  "network": {
+    "format-wifi": "{icon}",
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-ethernet": "󰈀",
+    "tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-ethernet": "󰈀  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "on-click": "nm-connection-editor",
+    "interval": 30,
+    "nospacing": 1
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "<span color='#b4befe'>{icon}</span> {percent}%",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "tooltip-format": "Brigtness: {percent}%"
+  },
+  "bluetooth": {
+    "interval": 30,
+    "format": "{icon}",
+    "format-icons": {
+      "enabled": "",
+      "disabled": "󰂲"
+    },
+    "on-click": "blueberry"
+  },
+  "pulseaudio": {
+    "format": "<span color='#b4befe'>{icon}</span> {volume}%",
+    "format-bluetooth": "󰂰",
+    "nospacing": 1,
+    "tooltip-format": "Volume: {volume}%",
+    "format-muted": "󰝟",
+    "format-icons": {
+      "headphone": "",
+      "default": ["󰖀", "󰕾", ""]
+    },
+    "on-click": "pavucontrol",
+    "scroll-step": 1
+  },
+  "battery": {
+    "interval": 30,
+    "format": "<span color='#737373'>{icon}</span> {capacity}%",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "format-charging": "<span color='#b2f252'>󰂄</span> {capacity}%",
+    "format-plugged": "<span color='#b2f252'>󰚥</span> MAX",
+    "format-full": "<span color='#b2f252'>󰚥</span> MAX",
+    "states": {
+      "warning": 20,
+      "critical": 10
+    },
+    "tooltip-format": "{}"
+  },
+  "custom/power": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "$HOME/.config/rofi/bin/powermenu"
+  },
+  "custom/weather": {
+    "exec": "curl 'https://wttr.in/HongKong?format=1'",
+    "interval": 3600
+  },
+  "custom/nixlogo": {
+    "format": "",
+    "tooltip": false
   }
 }
