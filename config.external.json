@@ -36,16 +36,14 @@
       "7": "",
       "8": "",
       "9": "",
-      "0": "",
       "default": "",
       "active": ""
     },
-    "persistent_workspaces": {
+    "persistent-workspaces": {
       "6": [],
       "7": [],
       "8": [],
-      "9": [],
-      "0": []
+      "9": []
     }
   },
   "temperature": {
