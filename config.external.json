@@ -136,7 +136,10 @@
     "interval": 3600
   },
   "custom/nixlogo": {
-    "format": "",
-    "tooltip": false
+    "return-type": "json",
+    "format": " {} ",
+    "exec": "printf '{\"text\": \"\", \"tooltip\": \"Launcher\"}'",
+    "interval": "once",
+    "on-click": "$HOME/.config/rofi/bin/launcher"
   }
 }
