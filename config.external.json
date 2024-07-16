@@ -138,8 +138,8 @@
   "custom/nixlogo": {
     "return-type": "json",
     "format": " {} ",
-    "exec": "printf '{\"text\": \"\", \"tooltip\": \"Launcher\"}'",
+    "exec": "printf '{\"text\": \"\", \"tooltip\": \"Profile\"}'",
     "interval": "once",
-    "on-click": "$HOME/.config/rofi/bin/launcher"
+    "on-click": "$HOME/.config/rofi/bin/profile-menu"
   }
 }
