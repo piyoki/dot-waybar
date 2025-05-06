@@ -3,7 +3,7 @@
   "layer": "top",
   "position": "top",
   "spacing": 5,
-  "height": 34,
+  "height": 42,
   "margin-top": 10,
   "margin-bottom": 0,
   "margin-left": 20,
@@ -11,12 +11,11 @@
   "modules-left": ["custom/nixlogo", "hyprland/workspaces", "cpu", "memory"],
   "modules-center": ["clock"],
   "modules-right": [
+    "custom/music",
     "tray",
     "network",
     "bluetooth",
     "pulseaudio",
-    "backlight",
-    "battery",
     "custom/power"
   ],
   "wlr/taskbar": {
@@ -77,6 +76,20 @@
     "exec": "free -h | awk '/Mem:/{printf $3}'",
     "max-length": 10
   },
+  "custom/music": {
+    "format": "{icon} {}",
+    "escape": true,
+    "return-type": "json",
+    "max-length": 64,
+    "tooltip": true,
+    // "exec": "playerctl metadata --format='{{title}}, {{artist}}'",
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{title}}, {{artist}}\", \"tooltip\": \"{{playerName}} | {{title}}, {{album}}, {{artist}} \", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    "on-click": "playerctl play-pause",
+    "format-icons": {
+      "Playing": " 🎜 ",
+      "Paused": " 🎜 "
+    }
+  },
   "tray": {
     "spacing": 15
   },
@@ -118,7 +131,7 @@
     "format-muted": "󰝟",
     "format-icons": {
       "headphone": "",
-      "default": ["󰖀", "󰕾", ""]
+      "default": ["󰖀", "󰕾", " "]
     },
     "on-click": "pavucontrol",
     "scroll-step": 1
