@@ -68,6 +68,7 @@ background-color: @darkgrey;
 #custom-nixlogo,
 #custom-weather,
 #custom-pacman,
+#custom-music,
 #backlight,
 #pulseaudio,
 #network,
@@ -91,6 +92,7 @@ background-color: @darkgrey;
 #network,
 #battery,
 #backlight,
+#custom-music,
 #bluetooth{
   color: @lightyellow;
   background-color: @bg;
