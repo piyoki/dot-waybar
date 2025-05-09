@@ -78,7 +78,7 @@
     "format": "{icon} {}",
     "escape": true,
     "return-type": "json",
-    "max-length": 64,
+    "max-length": 34,
     "tooltip": true,
     // "exec": "playerctl metadata --format='{{title}}, {{artist}}'",
     "exec": "playerctl -a metadata --format '{\"text\": \"{{title}}, {{artist}}\", \"tooltip\": \"{{playerName}} | {{title}}, {{album}}, {{artist}} \", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
