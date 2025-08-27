@@ -101,8 +101,8 @@ background-color: @darkgrey;
 
 #clock{
   font-family: JetBrainsMono Nerd Font;
-  background-color: @midnight;
-  color: @flake;
+  background-color: @flake;
+  color: @midnight;
 }
 
 #custom-weather,
