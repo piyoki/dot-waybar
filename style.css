@@ -3,9 +3,9 @@
 @define-color lightgrey #343a40;
 @define-color red #e30b44;
 @define-color white #f2efeb;
-@define-color flake #e6f9fa;
+@define-color flake #d2fff3;
 @define-color icyblue #aad1ee;
-@define-color flakeicy #e5f0fa;
+@define-color icy #f2f0f0;
 @define-color avocado #c1d98f;
 @define-color lightyellow #f6eac4;
 @define-color tray #181825;
@@ -52,13 +52,13 @@ background-color: @darkgrey;
 }
 
 #workspaces button.active {
-  color: @flake;
+  color: @icy;
 }
 
 #workspaces button:hover {
  box-shadow: inherit;
  text-shadow: inherit;
- color: @flake;
+ color: @icy;
  background-color: @lightgrey;
 }
 
@@ -95,7 +95,7 @@ background-color: @darkgrey;
 #backlight,
 #custom-music,
 #bluetooth{
-  color: @flake;
+  color: @icy;
   background-color: @bg;
 }
 
@@ -108,7 +108,7 @@ background-color: @darkgrey;
 #custom-weather,
 #custom-power {
   background-color: @bg;
-  color: @flake;
+  color: @icy;
 }
 
 #custom-nixlogo {
